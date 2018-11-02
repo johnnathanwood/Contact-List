@@ -1,10 +1,10 @@
 {
-    "contacts": [
-        {
-            "id": 1,
-            "name": "",
-            "number": "",
-            "address": ""
-        }
-    ]
+  "contacts": [
+    {
+      "id": 1,
+      "name": "John Wood",
+      "number": "615-351-4130",
+      "address": "123 My House"
+    }
+  ]
 }

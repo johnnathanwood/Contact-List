@@ -1,17 +1,17 @@
-const remoteURL = "http://localhost:8088"
+
 
 let contactCollection = {
 
     get: {
-        value: (resource, id) => {
-            return fetch(`${remoteURL}/${resource}/${id}`)
+        value: (id) => {
+            return fetch("http://localhost:8088/contacts")
             .then(result => result.json())
         }
     },
 
     add: {
-        value: (resource, item) => {
-            return fetch(`${remoteURL}/${resource}`, {
+        value: (item) => {
+            return fetch("http://localhost:8088/contacts", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
