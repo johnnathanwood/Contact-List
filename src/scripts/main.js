@@ -1,8 +1,8 @@
-import sayHello from "./hello"
+import contactCollection from "./ContactCollection"
 import sayGoodbye from "./goodbye"
 import SandwichMaker from "./sandwichMaker"
 
-sayHello()
+contactCollection()
 sayGoodbye()
 
 SandwichMaker.placeOrder("rye", "capicola", "provolone")
