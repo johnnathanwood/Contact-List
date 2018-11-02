@@ -22,5 +22,6 @@ let contactCollection = {
         }
     }
 }
-console.table(contactCollection)
+
+export default contactCollection
 
