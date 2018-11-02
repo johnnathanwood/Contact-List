@@ -23,5 +23,7 @@ let contactCollection = {
     }
 }
 
+
 export default contactCollection
+
 
