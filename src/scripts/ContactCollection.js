@@ -3,14 +3,11 @@
 let contactCollection = {
 
     get () {
-        value: (id) => {
             return fetch("http://localhost:8088/contacts")
             .then(result => result.json())
-        }
     },
 
-    add () {
-        value: (item) => {
+    add: (item) => {
             return fetch("http://localhost:8088/contacts", {
                 method: "POST",
                 headers: {
@@ -18,10 +15,9 @@ let contactCollection = {
                 },
                 body: JSON.stringify(item)
             })
-            .then(result => result.json())
         }
     }
-}
+
 
 
 

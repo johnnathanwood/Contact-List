@@ -1,10 +1,14 @@
-const makeContact = (entry)  => {
+const makeContact = (contacts)  => {
     return `
-    <div class="contact-form>
+    <di class="contact-form">
         <h1>Name:</h1>
-        <p class="entry">${entry.name}</p>
+        <p class="entry"><h3>${contacts.name}</h3></p>
         <h2>Phone Number:</h2>
-        <p class="entry">${entry.number}</p>
+        <p class="entry"><h3>${contacts.number}</h3></p>
         <h2>Address:</h2>
-        <p class="entry">${entry.address}</p></div>`
+        <p class="entry"><h3>${contacts.address}</h3></p>
+        </div>
+        `
 }
+
+export default makeContact

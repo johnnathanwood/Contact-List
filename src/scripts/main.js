@@ -1,11 +1,12 @@
+import populatePage from "./contactList"
+import contactForm from "./ContactForm"
 
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
-import getContactEntries from "./ContactList"
-import contactCollection from "./ContactCollection"
 
-sayGoodbye()
+populatePage()
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
-
-console.log(contactCollection.get.entries)
+const save = document.querySelector("#save")
+save.addEventListener("click",() => {
+    contactForm()
+    populatePage()
+    location.reload()
+})
