@@ -2,14 +2,14 @@
 
 let contactCollection = {
 
-    get: {
+    get () {
         value: (id) => {
             return fetch("http://localhost:8088/contacts")
             .then(result => result.json())
         }
     },
 
-    add: {
+    add () {
         value: (item) => {
             return fetch("http://localhost:8088/contacts", {
                 method: "POST",
@@ -22,6 +22,7 @@ let contactCollection = {
         }
     }
 }
+
 
 
 export default contactCollection

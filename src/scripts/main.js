@@ -1,16 +1,11 @@
 
 import sayGoodbye from "./goodbye"
 import SandwichMaker from "./sandwichMaker"
+import getContactEntries from "./ContactList"
+import contactCollection from "./ContactCollection"
 
 sayGoodbye()
 
 SandwichMaker.placeOrder("rye", "capicola", "provolone")
 
-
-
-function getContactsList() {
-    contactCollection()
-}
-
-console.log(getContactsList)
-
+console.log(contactCollection.get.entries)
